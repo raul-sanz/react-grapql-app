@@ -1,0 +1,8 @@
+{
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "dev": "https://eu1.prisma.sh/estraulsanz-1bcc84/Server/dev"
+    }
+  }
+}

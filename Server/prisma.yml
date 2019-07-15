@@ -1,0 +1,6 @@
+endpoint: https://eu1.prisma.sh/estraulsanz-1bcc84/Server/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/

@@ -1,0 +1,14 @@
+type Author {
+  id: ID! @id
+  name: String! @unique
+  quotes: [Quote!]!
+}
+
+type Quote {
+  id: ID! @id
+  text: String!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  author: Author!
+}
+

@@ -13,7 +13,7 @@ const Dashboard = () => {
           return(
             <div className="container mt-5" >
               <div className="row">
-                <table className="table col-md-12">
+                <table className="table col-md-4">
                   <thead>
                     <tr>
                       <th scope="col">Nombre</th>
@@ -33,10 +33,11 @@ const Dashboard = () => {
                   </tbody>
                 </table>
 
-                <table className="table col-md-12 mt-5">
+                <table className="table col-md-7 offset-md-1">
                   <thead>
                     <tr>
                       <th scope="col">Nombre</th>
+                      <th scope="col">Author</th>
                       <th scope="col">Edit</th>
                       <th scope="col">Delete</th>
                     </tr>
@@ -45,6 +46,7 @@ const Dashboard = () => {
                   {data.quotes.map((quote, index)=>(
                     <tr key={index}>
                       <td>{quote.text}</td>
+                      <td>{quote.author.name}</td>
                       <td><button type="button" className="btn btn-primary" >Actualizar</button></td>
                       
                       <td><button type="button" className="btn btn-danger" >Eliminar</button></td>

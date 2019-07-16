@@ -15,11 +15,11 @@ function App() {
       <div>
         <Switch>
           <Route exact path='/' component={Dashboard} />
-          <Route exact path='/author/create' component={CreateAuthor} />
-          <Route exact path='/author/update/:id' component={UpdateAuthor} />
-          <Route exact path='/quote/create' component={CreateQuote} />
-          <Route exact path='/quote/update/:id' component={UpdateQuote} />
-          <Route exact path='/view/author/:id' component={viewAuthor} />
+          <Route path='/authorcreate' component={CreateAuthor} />
+          <Route path='/authorupdate/:id' component={UpdateAuthor} />
+          <Route path='/quotecreate' component={CreateQuote} />
+          <Route path='/quoteupdate/:id' component={UpdateQuote} />
+          <Route path='/viewauthor/:id' component={viewAuthor} />
         </Switch>
       </div>
     </Router>

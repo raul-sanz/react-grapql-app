@@ -1,7 +1,7 @@
 import {gql} from 'apollo-boost';
 
 
-const CreateQuote = gql`mutation (
+const createQuote = gql`mutation (
     $text: String!
     $author_id: AuthorCreateOneWithoutQuotesInput!
 ){
@@ -15,6 +15,6 @@ const CreateQuote = gql`mutation (
   }
 }`
 
-export default  CreateQuote
+export default  createQuote
 
 //{"connect": {"id": "cjy4tp1ylb7ci0b5337gnxnnl" } }

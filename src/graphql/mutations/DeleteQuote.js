@@ -1,4 +1,4 @@
-import {gql} from 'apollo-bost'
+import {gql} from 'apollo-boost'
 
 const DeleteQuote = gql`mutation ( $id: ID!){
   deleteQuote(

@@ -28,6 +28,7 @@ const Dashboard = () => {
                       <tr key={index}>
                         <td>{author.name}</td>
                         <td><Link to={`/author/update/${author.id}`} type="button" className="btn btn-primary" >Actualizar</Link></td>
+                        <td><Link to={`/view/author/${author.id}`} type="button" className="btn btn-info" >Ver</Link></td>
                         
                         <td><button type="button" className="btn btn-danger" >Eliminar</button></td>
                       </tr>

@@ -6,6 +6,9 @@ const FindAuthor= gql`query ( $id: ID!){
   ){
     id
     name
+    quotes{
+      text
+    }
   }
 }`
 

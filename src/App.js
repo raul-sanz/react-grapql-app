@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import Dashboard from './components/Dashboard'
 import CreateAuthor from './components/authorComponents/CreateAuthor'
 import UpdateAuthor from './components/authorComponents/UpdateAuthor'
+import viewAuthor from './components/authorComponents/ViewAuthor'
 import CreateQuote from './components/quoteComponents/CreateQuote'
 import UpdateQuote from './components/quoteComponents/UpdateQuote'
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/author/update/:id' component={UpdateAuthor} />
           <Route exact path='/quote/create' component={CreateQuote} />
           <Route exact path='/quote/update/:id' component={UpdateQuote} />
+          <Route exact path='/view/author/:id' component={viewAuthor} />
         </Switch>
       </div>
     </Router>

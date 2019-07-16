@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
-    <Query query={GetAllData}>
+    <Query query={GetAllData} pollInterval={300}>
       {
         ({loading, error, data})=>{
           if(loading) return 'Loading...'
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     {data.authors.map((author, index)=>(
                       <tr key={index}>
                         <td>{author.name}</td>
-                        <td><button type="button" className="btn btn-primary" >Actualizar</button></td>
+                        <td><Link to={`/author/update/${author.id}`} type="button" className="btn btn-primary" >Actualizar</Link></td>
                         
                         <td><button type="button" className="btn btn-danger" >Eliminar</button></td>
                       </tr>

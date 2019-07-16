@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { Query, Mutation } from 'react-apollo';
 import GetAllData from '../graphql/queries/GetAllData'
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
@@ -33,7 +34,7 @@ const Dashboard = () => {
                     ))}
                     </tbody>
                   </table>
-                  <button className="btn btn-success btn-block">Crear Autor</button>
+                  <Link to={'/author/create'} className="btn btn-success btn-block">Crear Autor</Link>
                 </div>
                 
 
